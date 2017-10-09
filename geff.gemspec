@@ -29,10 +29,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
 
-  spec.add_dependency 'normalize-rails'
   spec.add_dependency 'bourbon'
   spec.add_dependency 'neat'
-  spec.add_dependency 'bitters'
   spec.add_dependency 'mountain_view', '~> 0.12'
 
 end

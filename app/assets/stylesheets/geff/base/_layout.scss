@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+
+  .wrapper {
+    @include grid-container();
+    max-width: 1044px;
+    margin: 0px auto;
+  }
+}
