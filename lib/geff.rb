@@ -1,5 +1,4 @@
 require 'geff/version'
-require 'sass'
 require 'bourbon'
 require 'neat'
 
