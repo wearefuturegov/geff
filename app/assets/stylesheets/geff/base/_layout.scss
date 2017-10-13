@@ -20,8 +20,17 @@ body {
 section {
 
   .wrapper {
-    @include grid-container();
     max-width: 1044px;
     margin: 0px auto;
   }
+}
+
+.main, header, footer {
+  @include grid-container;
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.field {
+  max-width: 50%;
 }
