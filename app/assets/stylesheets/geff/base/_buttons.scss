@@ -1,7 +1,7 @@
 $_button-background-color: $primary-color;
 $_button-background-color-hover: shade($action-color, 25%);
 
-#{$all-buttons} {
+#{$all-buttons}, .button {
   appearance: none;
   background-color: $_button-background-color;
   border: 0;
@@ -28,8 +28,8 @@ $_button-background-color-hover: shade($action-color, 25%);
   }
 
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    outline: none;
+    outline-offset: none;
   }
 
   &:disabled {
