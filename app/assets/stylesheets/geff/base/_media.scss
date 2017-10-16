@@ -1,3 +1,21 @@
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin hd-desktop {
+  @media (min-width: #{$hd-desktop-width}) {
+    @content;
+  }
+}
+
 figure {
   margin: 0;
 }

@@ -62,6 +62,10 @@ textarea {
   &::placeholder {
     color: tint($base-font-color, 40%);
   }
+
+  @include desktop {
+    width: 50%;
+  }
 }
 
 textarea {

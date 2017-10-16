@@ -19,18 +19,17 @@ body {
 
 section {
 
-  .wrapper {
-    max-width: 1044px;
-    margin: 0px auto;
+}
+
+.container {
+  @include grid-container;
+  max-width: $hd-desktop-width - 240px;
+  margin: 0 auto;
+  padding: $container-padding;
+
+  @include desktop {
+    padding: $container-padding * 1.5;
   }
 }
 
-.main, header, footer {
-  @include grid-container;
-  max-width: 1044px;
-  margin: 0 auto;
-  padding: 24px;
-}
-.field {
-  max-width: 50%;
-}
+
