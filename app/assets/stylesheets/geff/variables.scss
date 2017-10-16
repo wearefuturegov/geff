@@ -19,15 +19,18 @@ $base-spacing: 1.5em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
-// Colors
+// Unique Colors
 $blue: #1565c0;
-$dark-gray: #333;
+$black: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$white: #fff;
+
+$primary-color: $blue;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $black;
+$action-color: $primary-color;
 
 // Border
 $base-border-color: $light-gray;

@@ -23,12 +23,16 @@ section {
 
 .container {
   @include grid-container;
-  max-width: $hd-desktop-width - 240px;
   margin: 0 auto;
   padding: $container-padding;
 
   @include desktop {
     padding: $container-padding * 1.5;
+    max-width: $desktop-width;
+  }
+
+  @include hd-desktop {
+    max-width: $hd-desktop-width - 240px;
   }
 }
 
