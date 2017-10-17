@@ -6,6 +6,11 @@ $tablet-width: 640px;
 $desktop-width: 960px;
 $hd-desktop-width: 1440px;
 
+$mobile_grid: (
+  columns: 12,
+  gutter: 10px,
+);
+
 // Typography
 $font-stack-system: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 $base-font-family: $font-stack-system;
