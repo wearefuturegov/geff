@@ -1,0 +1,8 @@
+.card {
+  background-color: $card-background;
+  border-radius: $base-border-radius;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba($black, 0.05);
+  -moz-box-shadow: 0px 0px 8px 1px rgba($black, 0.05);
+  box-shadow: 0px 0px 8px 1px rgba($black, 0.05);
+}

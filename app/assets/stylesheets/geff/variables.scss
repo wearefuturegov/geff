@@ -1,3 +1,5 @@
+// This file needs including in your project before any other includes, this allows you to override any variables unique to your project
+
 // Media Queries
 $container-padding: 24px;
 $tablet-width: 640px;
@@ -14,7 +16,7 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 3px;
+$base-border-radius: 4px;
 $base-spacing: 1.5em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
@@ -23,14 +25,15 @@ $base-z-index: 0;
 $blue: #1565c0;
 $red: #c71f16;
 
-// Grays
+// Grayscales
 $black: #333;
 $medium-gray: #bdbdbd;
 $light-gray: #F6F6F6;
 $white: #fff;
 
-
+// Specific colors
 $primary-color: $blue;
+$card-background: $white;
 
 // Font Colors
 $base-font-color: $black;

@@ -3,10 +3,13 @@
 // Copyright 2013-2017 thoughtbot, inc.
 // MIT License
 
-@import "media";
-@import "buttons";
-@import "forms";
-@import "layout";
-@import "lists";
-@import "tables";
-@import "typography";
+@import "../layouts/media";
+@import "../layouts/layout";
+@import "../layouts/tables";
+
+@import "../identity/buttons";
+@import "../identity/forms";
+@import "../identity/lists";
+@import "../identity/typography";
+
+@import "../components/cards";
