@@ -36,4 +36,18 @@ section {
   }
 }
 
+.full_width {
+  @include grid-column(12);
+}
 
+.half {
+  @include grid-column(6);
+}
+
+.third {
+  @include grid-column(4);
+}
+
+.quarter {
+  @include grid-column(3);
+}
