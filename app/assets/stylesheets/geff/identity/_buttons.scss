@@ -1,5 +1,5 @@
 $_button-background-color: $primary-color;
-$_button-background-color-hover: shade($action-color, 25%);
+$_button-background-color-hover: shade($primary-color, 25%);
 
 #{$all-buttons}, .button {
   appearance: none;
