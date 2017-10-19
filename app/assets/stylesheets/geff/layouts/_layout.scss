@@ -24,10 +24,10 @@ section {
 .container {
   @include grid-container;
   margin: 0 auto;
-  padding: $container-padding ($container-padding - 10);
+  padding: $container-padding - 10;
 
   @include desktop {
-    padding: $container-padding * 1.5;
+    padding: $container-padding;
     max-width: $desktop-width;
   }
 
