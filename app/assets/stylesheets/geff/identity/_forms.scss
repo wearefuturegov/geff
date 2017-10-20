@@ -106,3 +106,11 @@ abbr[title="required"] {
 label.required:after {
   content: " *"
 }
+
+[type="file"], label.file {
+  width: auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
