@@ -1,0 +1,18 @@
+.simple_form {
+  span.error {
+    font-size: 75%;
+    margin-top: ($small-spacing*-1);
+    display: block;
+    margin-bottom: $small-spacing;
+    color: $red;
+
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+  .field_with_errors {
+    #{$all-text-inputs} {
+      border-color: rgba($red, 0.4);
+    }
+  }
+}
