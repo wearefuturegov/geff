@@ -37,30 +37,36 @@ section {
   }
 }
 
+// use inner container when nesting another grid within another grid
+.inner_container {
+  @include grid-collapse;
+  @include grid-container;
+}
+
 
 // Helpers for setting regularly used sizes of grids
-.full_width {
+.full_width { // 12 column
   @include grid-column(12, $mobile_grid);
 
   @include desktop {
     @include grid-column(12);
   }
 }
-.half {
+.half { // 6 column
   @include grid-column(12, $mobile_grid);
 
   @include desktop {
     @include grid-column(6);
   }
 }
-.third {
+.third { // 4 column
   @include grid-column(12, $mobile_grid);
 
   @include desktop {
     @include grid-column(4);
   }
 }
-.quarter {
+.quarter { // 3 column
   @include grid-column(12, $mobile_grid);
 
   @include desktop {
