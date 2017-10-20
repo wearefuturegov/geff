@@ -1,0 +1,31 @@
+.alert {
+  background-color: $medium-gray;
+  color: $white;
+
+  .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #flash_alert, #flash_notice {
+    float: left;
+  }
+  #alert_close {
+    float: right;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &.alert-alert, &.alert-error {
+    background-color: $negative-color;
+  }
+  &.alert-success {
+    background-color: $positive-color;
+  }
+  &.alert-notice {
+    background-color: rgba($primary-color, 0.25);
+    color: rgba($black, 0.75);
+  }
+}
