@@ -11,3 +11,17 @@
     padding: $container-padding;
   }
 }
+
+
+.card_table {
+  .card {
+    @include desktop {
+      padding: $container-padding/2;
+    }
+  }
+  .card_th {
+    font-weight: bold;
+    padding: $container-padding/2;
+    padding-bottom: 0;
+  }
+}
