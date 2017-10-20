@@ -1,7 +1,7 @@
 // This file needs including in your project before any other includes, this allows you to override any variables unique to your project
 
 // Media Queries
-$container-padding: 24px;
+$container-padding: 30px;
 $tablet-width: 640px;
 $desktop-width: 960px;
 $hd-desktop-width: 1440px;
@@ -15,10 +15,12 @@ $mobile_grid: (
 $font-stack-system: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
-$base-font-size: 18px;
+$base-font-size: 16px;
+$base-font-size-desktop: $base-font-size*1.13;
 
 // Line height
 $base-line-height: 1.5;
+$base-line-height-desktop: 1.75;
 $heading-line-height: 1.2;
 
 // Other Sizes

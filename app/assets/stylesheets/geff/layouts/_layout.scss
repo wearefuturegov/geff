@@ -24,7 +24,7 @@ section {
 .container {
   @include grid-container;
   margin: 0 auto;
-  padding: $container-padding - 10;
+  padding: $container-padding/2;
 
   @include desktop {
     padding: $container-padding;
