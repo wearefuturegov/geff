@@ -69,7 +69,8 @@ textarea {
 }
 
 textarea {
-  resize: vertical;
+  max-width: 100%;
+  // resize: vertical;
 }
 
 [type="checkbox"],

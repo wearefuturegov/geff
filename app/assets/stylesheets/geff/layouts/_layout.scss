@@ -21,6 +21,7 @@ section {
 
 }
 
+// Base grid framework container style, to create your own just use Neats mixin '@include grid-container'
 .container {
   @include grid-container;
   margin: 0 auto;
@@ -28,15 +29,16 @@ section {
 
   @include desktop {
     padding: $container-padding;
-    max-width: $desktop-width;
+    max-width: $desktop-width + 320;
   }
 
   @include hd-desktop {
-    max-width: $hd-desktop-width - 240px;
+    max-width: $hd-desktop-width - 40;
   }
 }
 
 
+// Helpers for setting regularly used sizes of grids
 .full_width {
   @include grid-column(12, $mobile_grid);
 
@@ -44,7 +46,6 @@ section {
     @include grid-column(12);
   }
 }
-
 .half {
   @include grid-column(12, $mobile_grid);
 
@@ -52,7 +53,6 @@ section {
     @include grid-column(6);
   }
 }
-
 .third {
   @include grid-column(12, $mobile_grid);
 
@@ -60,11 +60,32 @@ section {
     @include grid-column(4);
   }
 }
-
 .quarter {
   @include grid-column(12, $mobile_grid);
 
   @include desktop {
     @include grid-column(3);
+  }
+}
+
+// Helpers for hideing element class for media sizings
+.no_mobile {
+  @include mobile {
+    display: none;
+  }
+}
+.no_tablet {
+  @include tablet {
+    display: none;
+  }
+}
+.no_desktop {
+  @include desktop {
+    display: none;
+  }
+}
+.no_hd_desktop {
+  @include hd-desktop {
+    display: none;
   }
 }
