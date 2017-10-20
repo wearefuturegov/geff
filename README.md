@@ -2,7 +2,7 @@
 
 New Front End gem to be used as a base for Futuregov projects.. (geff= anagram of FG FE )
 
-![GEFF](https://github.com/wearefuturegov/geff/blob/master/geff.gif)
+<img src="https://github.com/wearefuturegov/geff/raw/master/geff.gif" alt="GEFF" style="max-width:100%;width: 200px;height: 200px;">
 
 ## Installation
 
