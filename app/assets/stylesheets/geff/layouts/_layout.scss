@@ -29,7 +29,7 @@ section {
 
   @include desktop {
     padding: $container-padding;
-    max-width: $desktop-width + 220;
+    max-width: $desktop-width + 120;
   }
 
   @include hd-desktop {
