@@ -114,3 +114,11 @@ label.required:after {
     cursor: pointer;
   }
 }
+
+.full_width_inputs {
+  #{$all-text-inputs} {
+    @include desktop {
+      width: 100%;
+    }
+  }
+}
