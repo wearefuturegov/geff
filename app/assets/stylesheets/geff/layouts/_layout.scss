@@ -29,11 +29,11 @@ section {
 
   @include desktop {
     padding: $container-padding;
-    max-width: $desktop-width + 320;
+    max-width: $desktop-width + 220;
   }
 
   @include hd-desktop {
-    max-width: $hd-desktop-width - 40;
+    max-width: $hd-desktop-width - 140;
   }
 }
 
