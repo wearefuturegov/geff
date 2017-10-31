@@ -32,7 +32,7 @@ $_button-background-color-hover: shade($primary-color, 25%);
     outline-offset: none;
   }
 
-  &:disabled {
+  &:disabled, &.disabled {
     cursor: not-allowed;
     opacity: 0.5;
 

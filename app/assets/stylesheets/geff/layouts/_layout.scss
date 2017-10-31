@@ -21,6 +21,10 @@ section {
 
 }
 
+.hidden {
+  display: none;
+}
+
 // Base grid framework container style, to create your own just use Neats mixin '@include grid-container'
 .container {
   @include grid-container;
