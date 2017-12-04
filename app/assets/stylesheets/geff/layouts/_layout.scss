@@ -78,6 +78,14 @@ section {
   }
 }
 
+.align_right {
+  text-align: right;
+}
+
+.right {
+  float: right;
+}
+
 // Helpers for hideing element class for media sizings
 .no_mobile {
   @include mobile {
