@@ -2,7 +2,7 @@
 
 New Front End gem to be used as a base for Futuregov projects.. (geff= anagram of FG FE )
 
-<img src="https://github.com/wearefuturegov/geff/raw/master/geff.gif" alt="GEFF" style="max-width:100%;width: 200px;height: 200px;">
+<img src="https://github.com/wearefuturegov/geff/raw/master/geff.gif" alt="GEFF" width="200px" height="200px">
 
 ## Installation
 
@@ -20,9 +20,16 @@ Or install it yourself as:
 
     $ gem install geff
 
+Include in your css application file reference to both geff/variables and geff/style.
+
+```scss
+@import 'geff/variables'
+@import 'geff/style'
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+See the [GEFF Wiki](https://github.com/wearefuturegov/geff/wiki) for full information about the framework, how to use it and what it contains.
 
 ## Development
 
@@ -32,7 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/geff.
+Bug reports and pull requests are welcome on GitHub at https://github.com/wearefuturegov/geff.
 
 ## License
 

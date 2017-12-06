@@ -1,10 +1,11 @@
 // This file needs including in your project before any other includes, this allows you to override any variables unique to your project
 
 // Media Queries
-$container-padding: 27px;
 $tablet-width: 640px;
 $desktop-width: 960px;
 $hd-desktop-width: 1440px;
+
+$container-padding: 27px;
 
 $mobile_grid: (
   columns: 12,
@@ -24,10 +25,12 @@ $base-line-height-desktop: 1.75;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 4px;
+$base-border-radius: 4px; // The border radius used as a base for all card and button components - set to 0 if no border radius is wanted
 $base-spacing: 1.5em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
+
+/* COLORS */
 
 // Unique Colors
 $blue: #1565c0;
@@ -40,9 +43,9 @@ $light-gray: #F6F6F6;
 $white: #fff;
 
 // Specific colors
-$primary-color: $blue;
-$card-background: $white;
-$negative-color: $red;
+$primary-color: $blue; // The main colour used for all buttons and links
+$card-background: $white; // The colour of the background of the card component
+$negative-color: $red; // The colour of negative attributes like errors.
 $positive-color: $blue;
 
 // Font Colors
