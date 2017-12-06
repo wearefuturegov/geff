@@ -29,7 +29,7 @@ Include in your css application file reference to both geff/variables and geff/s
 
 ## Usage
 
-See the [GEFF Wiki](https://github.com/wearefuturegov/geff/wiki) for full information about the framework, how to use it and what it contains.
+See the **[GEFF Wiki](https://github.com/wearefuturegov/geff/wiki)** for full information about the framework, how to use it and what it contains.
 
 ## Development
 
