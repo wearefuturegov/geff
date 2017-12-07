@@ -27,6 +27,12 @@ Include in your css application file reference to both geff/variables and geff/s
 @import 'geff/style'
 ```
 
+Include in your javascript application file reference to any of the geff js files required - **ensuring that it is after reference to jquery**.
+
+```js
+//= require geff/alerts
+```
+
 ## Usage
 
 See the **[GEFF Wiki](https://github.com/wearefuturegov/geff/wiki)** for full information about the framework, how to use it and what it contains.
