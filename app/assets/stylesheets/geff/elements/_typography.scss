@@ -55,8 +55,16 @@ hr {
   font-weight: bold;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .center {
   text-align: center;
+}
+
+.align_right {
+  text-align: right;
 }
 
 .dont_break_out {
@@ -75,5 +83,4 @@ hr {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
-
 }

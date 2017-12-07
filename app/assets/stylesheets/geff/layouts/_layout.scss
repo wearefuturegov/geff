@@ -17,14 +17,6 @@ body {
   margin: 0;
 }
 
-section {
-
-}
-
-.hidden {
-  display: none;
-}
-
 // Base grid framework container style, to create your own just use Neats mixin '@include grid-container'
 .container {
   @include grid-container;
@@ -46,7 +38,6 @@ section {
   @include grid-collapse;
   @include grid-container;
 }
-
 
 // Helpers for setting regularly used sizes of grids
 .full_width { // 12 column
@@ -78,13 +69,19 @@ section {
   }
 }
 
-.align_right {
-  text-align: right;
+
+.clear {
+  clear: both;
 }
 
 .right {
   float: right;
 }
+
+.hidden {
+  display: none;
+}
+
 
 // Helpers for hideing element class for media sizings
 .no_mobile {
