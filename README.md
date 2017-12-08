@@ -33,6 +33,12 @@ Include in your javascript application file reference to any of the geff js file
 //= require geff/alerts
 ```
 
+After this make sure you include reference to the function in your `public.js` file in a document ready function.
+
+```js
+$('#alerts').alerts();
+```
+
 ## Usage
 
 See the **[GEFF Wiki](https://github.com/wearefuturegov/geff/wiki)** for full information about the framework, how to use it and what it contains.
