@@ -9,6 +9,7 @@
 
   #flash_alert, #flash_notice, #flash_success, #flash_error {
     float: left;
+    max-width: 95%;
   }
   #alert_close {
     float: right;
