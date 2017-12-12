@@ -27,7 +27,7 @@ Include in your css application file reference to both geff/variables and geff/s
 @import 'geff/style'
 ```
 
-Include in your javascript application file reference to any of the geff js files required - **ensuring that it is after reference to jquery**.
+Include in your javascript application file reference to any of the geff js files required - **ensuring that it is after reference to jquery**. Here is an example for the alerts functionality:
 
 ```js
 //= require geff/alerts
@@ -38,6 +38,8 @@ After this make sure you include reference to the function in your `public.js` f
 ```js
 $('#alerts').alerts();
 ```
+
+See more functions [in the wiki](https://github.com/wearefuturegov/geff/wiki/Alert-Functions.md).
 
 ## Usage
 
