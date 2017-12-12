@@ -3,9 +3,11 @@ $.fn.alerts = function(timeOut) {
 
   timeOut = timeOut || 5000;
 
-  setTimeout(function() {
-    $('#alerts').slideUp();
-  }, timeOut);
+  if (timeOut != false)
+    setTimeout(function() {
+      $('#alerts').slideUp();
+    }, timeOut);
+  }
 
   $('#alert_close').click(function() {
     $('#alerts').slideUp();
