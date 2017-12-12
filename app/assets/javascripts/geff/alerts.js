@@ -1,9 +1,11 @@
-$.fn.alerts = function() {
+$.fn.alerts = function(timeOut) {
   if (this.length === 0) { return false; }
+
+  timeOut = timeOut || 5000;
 
   setTimeout(function() {
     $('#alerts').slideUp();
-  }, 5000);
+  }, timeOut);
 
   $('#alert_close').click(function() {
     $('#alerts').slideUp();
