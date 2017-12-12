@@ -3,7 +3,7 @@ $.fn.alerts = function(timeOut) {
 
   timeOut = timeOut || 5000;
 
-  if (timeOut != false)
+  if (timeOut != false) {
     setTimeout(function() {
       $('#alerts').slideUp();
     }, timeOut);
