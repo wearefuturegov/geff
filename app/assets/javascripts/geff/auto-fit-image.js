@@ -9,7 +9,7 @@ $.fn.autoFitImage = function() {
    * Dev todo: Allow custom variables for left / top / center / bottom etc for aligning the image.
   */
 
-  $('.auto_fit_image').each(function() {
+$('.auto_fit_image').each(function() {
     var width = $(this).width();
     var height = $(this).height();
     var parentWidth = $(this).parent().width();
@@ -17,7 +17,7 @@ $.fn.autoFitImage = function() {
     var alignment = $(this).data('align') || 'centre';
 
     if(parentHeight != height) {
-      if (width > height || width < parentHeight) {
+      if (height < parentHeight) {
         $(this).height('100%').css('max-width', 'none');
         var overlap = $(this).width() - $(this).parent().width();
         if (alignment != 'left') {
