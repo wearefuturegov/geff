@@ -1,4 +1,9 @@
-$.fn.smoothScroll = function() {
+$.fn.smoothScroll = function(scrollSpeed) {
+
+  if (scrollSpeed != 0) {
+    scrollSpeed = scrollSpeed || 1000;
+  }
+
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -19,7 +24,7 @@ $.fn.smoothScroll = function() {
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top
-          }, 1000, function() {
+          }, scrollSpeed, function() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
