@@ -1,5 +1,11 @@
 $.fn.smoothScroll = function(scrollSpeed) {
 
+  // TODO:
+  // add improvement - set default speed to create the optimal speed based on length to the anchor - for example 500 may be the best speed when its only a short distance, but if its further 500 may be too quick.
+  // a 'fast' 'slow' 'medium' setting may be better using this system.
+
+  // create a class that removes this functinoality? Not sure if it would be required but might be nice if a link needs to not use this functionality.
+
   if (scrollSpeed != 0) {
     scrollSpeed = scrollSpeed || 1000;
   }
