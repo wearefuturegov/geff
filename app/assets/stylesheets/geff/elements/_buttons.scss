@@ -1,5 +1,6 @@
 $_button-background-color: $primary-color;
-$_button-background-color-hover: shade($primary-color, 25%);
+$_button-background-color-hover: shade($primary-color, 15%);
+$_button-background-color-click: shade($primary-color, 25%);
 
 #{$all-buttons}, .button {
   appearance: none;
@@ -24,6 +25,10 @@ $_button-background-color-hover: shade($primary-color, 25%);
 
   &:hover {
     background-color: $_button-background-color-hover;
+    color: $white;
+  }
+  &:active {
+    background-color: $_button-background-color-click;
     color: $white;
   }
 
