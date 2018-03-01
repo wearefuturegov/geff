@@ -1,0 +1,44 @@
+.checkbox {
+  $checkbox: 40px; // Set the size and tune in.
+  position: relative;
+  display: block;
+  margin-bottom: $baseline*0.75;
+  label {
+    margin-left: $gutter*3;
+    font-weight: 400;
+    line-height: $checkbox;
+  }
+  input[type=checkbox]{
+    font-family: "DroidSans";
+    font-size: $checkbox*0.5;
+    line-height: $checkbox*0.5;
+    position: absolute;
+    margin: $checkbox*0.25;
+    z-index: 500;
+    visibility: hidden;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      width: $checkbox;
+      height: $checkbox;
+      visibility: visible;
+    }
+    &:before {
+      background: none;
+      width: $checkbox*0.5;
+      height: $checkbox*0.5;
+      margin: 0;
+    }
+    &:after {
+      border: $black $border-width $border-style;
+      margin: -$checkbox*0.25;
+      cursor: pointer;
+    }
+  }
+}
+
+input[type=checkbox]:checked:before {
+  content: '\2714';
+}

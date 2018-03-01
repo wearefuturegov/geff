@@ -1,29 +1,21 @@
 .card {
-  background-color: $card-background;
-  border-radius: $base-border-radius;
-  padding: $container-padding/1.5;
+  background-color: $white;
+  padding: $baseline;
   -webkit-box-shadow: 0px 0px 8px 1px rgba($black, 0.05);
   -moz-box-shadow: 0px 0px 8px 1px rgba($black, 0.05);
   box-shadow: 0px 0px 8px 1px rgba($black, 0.05);
   margin-top: 10px;
   position: relative;
   overflow: hidden;
-
-  @include desktop {
-    padding: $container-padding;
-  }
 }
 
 
 .card_table {
   .card {
-    @include desktop {
-      padding: $container-padding/2;
-    }
   }
   .card_th {
     font-weight: bold;
-    padding: $container-padding/2;
+    padding: $baseline;
     padding-bottom: 0;
   }
 }

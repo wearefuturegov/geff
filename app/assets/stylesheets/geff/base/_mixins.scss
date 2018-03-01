@@ -1,0 +1,6 @@
+@mixin ease {
+  transition: all $time $curve;
+  -webkit-transition: all $time $curve;
+  -moz-transition: all $time $curve;
+  -o-transition: all $time $curve;
+}

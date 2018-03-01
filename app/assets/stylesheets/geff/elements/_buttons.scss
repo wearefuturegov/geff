@@ -1,48 +1,42 @@
-$_button-background-color: $primary-color;
-$_button-background-color-hover: shade($primary-color, 15%);
-$_button-background-color-click: shade($primary-color, 25%);
-
 #{$all-buttons}, .button {
+  @include ease;
   appearance: none;
-  background-color: $_button-background-color;
-  border: 0;
-  border-radius: $base-border-radius;
+  background-color: $primary;
+  border: $border-style $border-width $black;
   color: $white;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $stack;
+  font-size: $body;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: $baseline*0.5 $gutter;
   text-align: center;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-
   &:hover {
-    background-color: $_button-background-color-hover;
-    color: $white;
+    @include ease;
+    background-color: $hover;
+    color: $black;
   }
   &:active {
-    background-color: $_button-background-color-click;
+    background-color: $hover;
     color: $white;
   }
-
   &:focus {
     outline: none;
     outline-offset: none;
   }
-
-  &:disabled, &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-
+  &.confirm {
+    background-color: $green;
+    border-color: $green;
     &:hover {
-      background-color: $_button-background-color;
+      @include ease;
+      background-color: $green;
+      color: $black;
     }
   }
 }

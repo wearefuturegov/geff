@@ -1,10 +1,10 @@
 .simple_form {
   span.error, span.hint {
     font-size: 75%;
-    margin-top: ($small-spacing*-1);
+    margin-top: ($baseline*-1);
     display: block;
-    margin-bottom: $small-spacing;
-    color: $negative-color;
+    margin-bottom: $baseline;
+    color: $negative;
 
     &:first-letter {
       text-transform: capitalize;
@@ -16,16 +16,13 @@
   }
   .error_notification {
     font-weight: bold;
-    color: $negative-color;
-    margin-bottom: $small-spacing;
+    color: $negative;
+    margin-bottom: $baseline;
   }
   .field_with_errors {
     #{$all-text-inputs} {
-      border-color: rgba($negative-color, 0.4);
+      border-color: rgba($negative, 0.4);
     }
-  }
-  .actions {
-    margin-top: $base-spacing;
   }
 }
 

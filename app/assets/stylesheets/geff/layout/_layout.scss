@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+// Base grid framework container style, to create your own just use Neats mixin '@include grid-container'
+.container {
+  @include grid-container;
+  margin: 0 auto;
+  padding: $baseline;
+}
+
+// use inner container when nesting another grid within another grid
+.inner_container {
+  @include grid-collapse;
+  @include grid-container;
+}
+
+.clear {
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}

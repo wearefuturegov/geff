@@ -1,15 +1,10 @@
 $font-stack-system: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 
 html {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-
-  @include desktop {
-    font-size: $base-font-size-desktop;
-    line-height: $base-line-height-desktop;
-  }
+  color: $black;
+  font-family: $stack;
+  font-size: $body;
+  line-height: $baseline;
 }
 
 h1,
@@ -18,23 +13,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
-  font-size: modular-scale(1);
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  line-height: $baseline;
+  margin: 0 0 $baseline;
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $baseline;
 }
 
 a {
-  color: $primary-color;
+  color: $primary;
   text-decoration-skip: ink;
-  transition: color $base-duration $base-timing;
+  transition: color $time $curve;
 
   &:hover {
-    color: shade($primary-color, 25%);
+    color: shade($primary, 25%);
   }
 
   &:focus {
@@ -44,11 +37,11 @@ a {
 }
 
 hr {
-  border-bottom: $base-border;
+  border-bottom: $border-style $border-width $black;
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: $base-spacing 0;
+  margin: $baseline 0;
 }
 
 .bold {

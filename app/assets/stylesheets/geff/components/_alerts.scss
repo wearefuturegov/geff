@@ -20,13 +20,13 @@
   }
 
   &.alert-alert, &.alert-error {
-    background-color: $negative-color;
+    background-color: $negative;
   }
   &.alert-success {
-    background-color: $positive-color;
+    background-color: $positive;
   }
   &.alert-notice {
-    background-color: rgba($primary-color, 0.25);
+    background-color: rgba($primary, 0.25);
     color: rgba($black, 0.75);
   }
 }

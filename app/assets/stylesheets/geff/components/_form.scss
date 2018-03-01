@@ -1,0 +1,13 @@
+form {
+  label.question {
+    font-size: $body;
+    line-height: $baseline*1.5;
+    margin-top: 0;
+    margin-bottom: $baseline*0.25;
+  }
+  input.answer {
+    font-size: $body;
+    line-height: $baseline*1.5;
+    margin-bottom: $baseline;
+  }
+}

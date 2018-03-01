@@ -1,0 +1,42 @@
+.radio {
+  $radio: 40px; // Set the size and tune in.
+  position: relative;
+  display: block;
+  margin-bottom: $baseline*0.75;
+  label {
+    margin-left: $gutter*3;
+    font-weight: 400;
+    line-height: $radio;
+  }
+  input[type=radio]{
+    position: absolute;
+    margin: $radio*0.25;
+    z-index: 500;
+    visibility: hidden;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      border-radius: 100%;
+      display: block;
+      width: $radio;
+      height: $radio;
+      visibility: visible;
+    }
+    &:before {
+      background: none;
+      width: $radio*0.5;
+      height: $radio*0.5;
+      margin: 0;
+    }
+    &:after {
+      border: $black $border-width $border-style;
+      margin: -$radio*0.25;
+      cursor: pointer;
+    }
+  }
+}
+
+input[type=radio]:checked:before {
+  background: $black
+}
