@@ -22,10 +22,8 @@ $gutter: 20px;
 $border-style: solid;
 $border-width: 2px;
 
-// Unique Colors
-$blue: #1565c0;
-$green: #00823b;
-$red: #0051ff;
+// Identity
+$brand: #555555;
 
 // Grayscales
 $black: #000;
@@ -34,20 +32,13 @@ $medium-gray: #bdbdbd;
 $light-gray: #F6F6F6;
 $white: #fff;
 
-// Specific colors
+// Functional
 $primary: $black; // The main colour used for all buttons and links
 $background: $white;
-$negative: $red; // The colour of negative attributes like errors.
-$positive: $blue;
-
+$negative: #EB0004; // red contrast ratio 4.63:1
+$positive: #008906; // green contrast ratio 4.58:1
+$focus: #FF9300;
 $hover: $white;
-
-// Focus
-$focus: $negative;
-$focus-outline-color: transparentize($primary, 0.4);
-$focus-outline-width: 3px;
-$focus-outline: $focus-outline-width solid $focus-outline-color;
-$focus-outline-offset: 2px;
 
 // Animations
 $time: 500ms;

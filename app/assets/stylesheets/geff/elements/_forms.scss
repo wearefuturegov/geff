@@ -38,9 +38,8 @@ textarea {
   width: 100%;
 
   &:focus {
-    border-color: $focus;
-    box-shadow: $_form-box-shadow-focus;
-    outline: none;
+    outline: $border-width*2 $focus $border-style;
+    outline-offset: 0;
   }
 
   &:disabled {
@@ -79,8 +78,8 @@ select {
 [type="file"],
 select {
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    outline: $border-width*2 $focus $border-style;
+    outline-offset: 0;
   }
 }
 

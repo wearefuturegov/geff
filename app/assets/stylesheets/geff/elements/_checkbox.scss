@@ -9,7 +9,7 @@
     line-height: $checkbox;
   }
   input[type=checkbox]{
-    font-family: "DroidSans";
+    font-family: inherit;
     font-size: $checkbox*0.5;
     line-height: $checkbox*0.5;
     position: absolute;

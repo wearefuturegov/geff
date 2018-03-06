@@ -31,11 +31,11 @@
     outline-offset: none;
   }
   &.confirm {
-    background-color: $green;
-    border-color: $green;
+    background-color: $positive;
+    border-color: $positive;
     &:hover {
       @include ease;
-      background-color: $green;
+      background-color: $positive;
       color: $black;
     }
   }
