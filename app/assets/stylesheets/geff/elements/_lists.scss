@@ -28,3 +28,10 @@ ul.default {
     margin-bottom: .75em;
     padding-left: 1.5em;
 }
+
+ul {
+  margin-bottom: $baseline;
+  li {
+    margin-bottom: $baseline*0.5;
+  }
+}

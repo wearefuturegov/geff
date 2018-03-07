@@ -24,10 +24,13 @@ p {
 a {
   color: $primary;
   text-decoration-skip: ink;
-  transition: color $time $curve;
+
+  &:active {
+    color: $active;
+  }
 
   &:hover {
-    color: shade($primary, 25%);
+    color: $hover;
   }
 
   &:focus {

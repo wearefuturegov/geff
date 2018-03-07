@@ -9,7 +9,7 @@ $hd-desktop-width: 1440px;
 $stack: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 
 $body: 18px;
-$baseline: 24px;
+$baseline: 26px;
 
 // Grid
 $mobile_grid: (
@@ -38,8 +38,5 @@ $background: $white;
 $negative: #EB0004; // red contrast ratio 4.63:1
 $positive: #008906; // green contrast ratio 4.58:1
 $focus: #FF9300;
-$hover: $white;
-
-// Animations
-$time: 500ms;
-$curve: ease;
+$hover: $brand;
+$active: $brand;

@@ -1,5 +1,4 @@
 #{$all-buttons}, .button {
-  @include ease;
   appearance: none;
   background-color: $primary;
   border: $border-style $border-width $black;
@@ -18,12 +17,12 @@
   vertical-align: middle;
   white-space: nowrap;
   &:hover {
-    @include ease;
-    background-color: $hover;
+
+    background-color: $white;
     color: $black;
   }
   &:active {
-    background-color: $hover;
+    background-color: $white;
     color: $white;
   }
   &:focus {
@@ -34,7 +33,7 @@
     background-color: $positive;
     border-color: $positive;
     &:hover {
-      @include ease;
+  
       background-color: $positive;
       color: $black;
     }

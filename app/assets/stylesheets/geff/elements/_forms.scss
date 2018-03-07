@@ -34,7 +34,6 @@ textarea {
   box-sizing: border-box;
   margin-bottom: $baseline;
   padding: $baseline*0.25;
-  transition: border-color $time $time;
   width: 100%;
 
   &:focus {

@@ -1,0 +1,31 @@
+nav.nav.side {
+  margin-top: $baseline*2;
+  ul {
+    li {
+      a {
+        font-weight: 600;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      ul {
+        margin: 0;
+        li {
+          margin-left: $gutter*0.5;
+          margin-top: $baseline*0.25;
+          margin-bottom: $baseline*0.25;
+          &.active, &.active a, &:hover {
+            color: $active;
+          }
+          &:before {
+            content: '–';
+          }
+          a {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
