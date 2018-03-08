@@ -38,4 +38,14 @@
       color: $black;
     }
   }
+  &.secondary {
+    background-color: $white;
+    border-color: $black;
+    color: $black;
+    &:hover {
+      background-color: $black;
+      border-color: $black;
+      color: $white;
+    }
+  }
 }
