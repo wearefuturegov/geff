@@ -14,7 +14,9 @@ $.fn.accordion = function() {
 
   parentAccord.find('.accord-toggle').click(function(){
     $(this).next().slideToggle('fast');
+    $(".accord-single").removeClass("open");
 
     parentAccord.find(".accord-cont").not($(this).next()).slideUp('fast');
+    parentAccord.find(".accord-single").addClass("open");
   });
 };
