@@ -17,6 +17,6 @@ $.fn.accordion = function() {
     $(".accord-single.open").removeClass("open");
 
     parentAccord.find(".accord-cont").not($(this).next()).slideUp('fast');
-    parentAccord.find(".accord-single").addClass("open");
+    $(this).closest(".accord-single").addClass("open");
   });
 };
