@@ -14,9 +14,11 @@ $.fn.accordion = function() {
 
   parentAccord.find('.accord-toggle').click(function(){
     $(this).next().slideToggle('fast');
-    $(this).closest('.accordion').find('.accord-single.open').removeClass('open');
+    var currentContainer = $(this).closest('.accord-single');
+    currentContainer.toggleClass('open');
 
+    $(this).closest('.accordion').find('.accord-single.open').not(currentContainer).removeClass('open');
     parentAccord.find('.accord-cont').not($(this).next()).slideUp('fast');
-    $(this).closest('.accord-single').addClass('open');
+
   });
 };
