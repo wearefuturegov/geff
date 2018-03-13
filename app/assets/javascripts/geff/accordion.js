@@ -1,5 +1,5 @@
 $.fn.accordion = function() {
-  if (this.length === 0) { return false; }\
+  if (this.length === 0) { return false; }
 
   /*
     A few things that would be nice to add to this
