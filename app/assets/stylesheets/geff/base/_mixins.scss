@@ -1,0 +1,25 @@
+@mixin button-shadow {
+  top: 0;
+  -moz-box-shadow: 0 2px 0 0 $black;
+  -webkit-box-shadow: 0 2px 0 0 $black;
+  box-shadow: 0 2px 0 0 $black;
+}
+
+@mixin button-active-shadow {
+  top: 2px;
+  -moz-box-shadow: 0 0 0 0 $black;
+  -webkit-box-shadow: 0 0 0 0 $black;
+  box-shadow: 0 0 0 0 $black;
+}
+
+@mixin shadow-none {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@mixin focus {
+  box-shadow: 0 0 0 $border-width*3 $focus;
+  outline: 0;
+  outline-offset: 0;
+}

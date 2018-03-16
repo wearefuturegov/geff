@@ -1,8 +1,10 @@
 #{$all-buttons}, .button {
+  @include button-shadow;
+  position: relative;
   appearance: none;
-  background-color: $primary;
+  background-color: $white;
   border: $border-style $border-width $black;
-  color: $white;
+  color: $black;
   cursor: pointer;
   display: inline-block;
   font-family: $stack;
@@ -17,35 +19,37 @@
   vertical-align: middle;
   white-space: nowrap;
   &:hover {
-
     background-color: $white;
     color: $black;
   }
   &:active {
     background-color: $white;
-    color: $white;
+    color: $black;
   }
   &:focus {
     outline: none;
     outline-offset: none;
   }
   &.confirm {
-    background-color: $positive;
-    border-color: $positive;
+    background-color: $brand;
+    border-color: $brand;
+    &:active {
+      @include button-active-shadow;
+    }
     &:hover {
-  
-      background-color: $positive;
+      background-color: $brand;
       color: $black;
     }
   }
   &.secondary {
-    background-color: $white;
-    border-color: $black;
-    color: $black;
+    @include shadow-none;
+    background: none;
+    border: none;
+    color: $brand-b;
+    padding: 0;
+    text-decoration: underline;
     &:hover {
-      background-color: $black;
-      border-color: $black;
-      color: $white;
+      color: $brand-b2;
     }
   }
 }

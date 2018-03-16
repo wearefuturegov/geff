@@ -1,4 +1,18 @@
 header.header {
-  background: $black;
-  border-bottom: $brand $border-style $baseline;
+  background: $brand;
+  .logo, .title, .admin {
+    font-weight: 600;
+    display: block;
+    margin: $baseline 0;
+  }
+  .admin {
+    text-align: right;
+    font-weight: 400;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
 }

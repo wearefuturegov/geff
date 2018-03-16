@@ -33,10 +33,11 @@ $light-gray: #F6F6F6;
 $white: #fff;
 
 // Functional
-$primary: $black; // The main colour used for all buttons and links
 $background: $white;
 $negative: #EB0004; // red contrast ratio 4.63:1
 $positive: #008906; // green contrast ratio 4.58:1
 $focus: #FF9300;
 $hover: $brand;
 $active: $brand;
+
+$primary: $brand; // The main colour used for all buttons and links

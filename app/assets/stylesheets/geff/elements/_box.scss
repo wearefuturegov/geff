@@ -1,4 +1,15 @@
 .box {
-  border: $border-style $border-width*2 $brand;
+  border: $border-style $border-width*2 $negative;
   padding: $baseline;
+  li {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ul.box {
+  list-style-type: disc;
+  color: $negative;
+  padding-left: 2rem;
 }

@@ -4,24 +4,29 @@
   display: block;
   margin-bottom: $baseline*0.75;
   label {
-    margin-left: $gutter*3;
+    padding-left: $gutter*3;
     font-weight: 400;
     line-height: $radio;
+    &:hover {
+      cursor: pointer;
+    }
   }
   input[type=radio]{
     position: absolute;
-    margin: $radio*0.25;
-    z-index: 500;
-    visibility: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 100%;
+    height: $radio;
+    width: $radio;
     &:before, &:after {
       content: '';
       position: absolute;
-      top: 0;
       border-radius: 100%;
       display: block;
       width: $radio;
       height: $radio;
-      visibility: visible;
+      top: $radio*0.25;
+      left: $radio*0.25;
     }
     &:before {
       background: none;

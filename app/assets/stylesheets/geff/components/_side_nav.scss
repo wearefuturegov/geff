@@ -8,9 +8,13 @@ nav.nav.side {
         &:hover {
           text-decoration: underline;
         }
+        &.current + ul {
+          display: block;
+        }
       }
       ul {
         margin: 0;
+        display: none;
         li {
           margin-left: $gutter*0.5;
           margin-top: $baseline*0.25;
