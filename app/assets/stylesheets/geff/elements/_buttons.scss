@@ -2,9 +2,9 @@
   @include button-shadow;
   position: relative;
   appearance: none;
-  background-color: $white;
+  background-color: $black;
   border: $border-style $border-width $black;
-  color: $black;
+  color: $white;
   cursor: pointer;
   display: inline-block;
   font-family: $stack;
@@ -19,8 +19,8 @@
   vertical-align: middle;
   white-space: nowrap;
   &:hover {
-    background-color: $white;
-    color: $black;
+    background-color: $black;
+    color: $white;
   }
   &:active {
     background-color: $white;
@@ -33,6 +33,7 @@
   &.confirm {
     background-color: $brand;
     border-color: $brand;
+    color: $black;
     &:active {
       @include button-active-shadow;
     }

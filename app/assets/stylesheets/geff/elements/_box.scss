@@ -6,10 +6,20 @@
       margin-bottom: 0;
     }
   }
+  &.info {
+    border-color: $gray-lighter;
+    background: $gray-lighter;
+  }
+  p {
+    font-weight: 600;
+  }
 }
 
 ul.box {
   list-style-type: disc;
   color: $negative;
   padding-left: 2rem;
+  &.info {
+    color: $black;
+  }
 }

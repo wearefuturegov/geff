@@ -22,11 +22,11 @@ nav.nav.side {
           &.active, &.active a, &:hover {
             color: $active;
           }
-          &:before {
-            content: '–';
-          }
           a {
             font-weight: 300;
+            &:before {
+              content: '– ';
+            }
           }
         }
       }

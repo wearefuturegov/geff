@@ -12,6 +12,11 @@ $body: 18px;
 $baseline: 26px;
 
 // Grid
+$main_grid: (
+  columns: 12,
+  gutter: 20px,
+);
+
 $mobile_grid: (
   columns: 12,
   gutter: 10px,
@@ -28,8 +33,8 @@ $brand: #555555;
 // Grayscales
 $black: #000;
 $gray: #555555;
-$medium-gray: #bdbdbd;
-$light-gray: #F6F6F6;
+$gray-light: #bdbdbd;
+$gray-lighter: #eeeeee;
 $white: #fff;
 
 // Functional
