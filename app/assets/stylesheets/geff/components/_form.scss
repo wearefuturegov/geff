@@ -1,13 +1,22 @@
 form {
   label.question {
     font-size: $body;
-    line-height: $baseline*1.5;
+    line-height: $baseline;
     margin-top: 0;
     margin-bottom: $baseline*0.25;
   }
   input.answer {
     font-size: $body;
     line-height: $baseline*1.5;
-    margin-bottom: $baseline;
+    margin-bottom: $baseline*0.5;
+  }
+  label.text_date {
+    display: none;
+  }
+  .extra {
+    display: none;
+    margin-top: $baseline;
+    padding-left: $gutter;
+    border-left: $border-width*2 $border-style $brand;
   }
 }
