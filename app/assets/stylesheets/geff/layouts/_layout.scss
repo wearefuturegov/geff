@@ -61,6 +61,13 @@ body {
     @include grid-column(4);
   }
 }
+.two_thirds { // 4 column
+  @include grid-column(12, $mobile_grid);
+
+  @include desktop {
+    @include grid-column(8);
+  }
+}
 .quarter { // 3 column
   @include grid-column(12, $mobile_grid);
 
