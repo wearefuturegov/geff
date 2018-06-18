@@ -3,7 +3,7 @@ $.fn.parallax = function(speed = 0.2, reverse = false) {
 
   // Taken from Dave Ruperts Cheapass Parallax - https://daverupert.com/2018/02/cheapass-parallax/
 
-  const ele = document.getElementById(this.attr('id'));
+  var ele = document.getElementById(this.attr('id'));
 
   ele.style.transform = 'translateY( calc( var(--scrollparallax) * 1px ) )';
 
